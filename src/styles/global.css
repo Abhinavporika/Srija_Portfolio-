@@ -1,0 +1,271 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0a0a0a;
+  --color-fg: #e8e6e0;
+  --color-line: #2a2a2a;
+  --color-bone: #e8e6e0;
+  --color-brass: #c9a469;
+  --color-accent: #c9a469;
+  --color-muted: #6b6a65;
+  --color-error: #ff7a5c;
+
+  --font-sans: "Inter Tight", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-serif: "Instrument Serif", ui-serif, Georgia, serif;
+
+  --ease-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    overflow-x: clip;
+  }
+
+  body {
+    @apply bg-bg text-fg font-sans antialiased;
+    overflow-x: clip;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background: var(--color-accent);
+    color: var(--color-bg);
+  }
+
+  :focus-visible {
+    outline: 1px solid var(--color-bone);
+    outline-offset: 4px;
+    border-radius: 1px;
+  }
+
+  input:-webkit-autofill,
+  textarea:-webkit-autofill,
+  select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px var(--color-bg) inset;
+    -webkit-text-fill-color: var(--color-fg);
+    caret-color: var(--color-fg);
+    transition: background-color 999999s ease-in-out 0s;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-bg);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: color-mix(in srgb, var(--color-bone) 14%, transparent);
+    border-radius: 8px;
+    border: 3px solid var(--color-bg);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer utilities {
+  .bg-pattern {
+    background-image: 
+      linear-gradient(90deg, color-mix(in srgb, var(--color-line) 50%, transparent 50%) 1px, transparent 1px),
+      linear-gradient(color-mix(in srgb, var(--color-line) 50%, transparent 50%) 1px, transparent 1px);
+    background-size: 50px 50px;
+    background-position: 0px 0px;
+  }
+}
+
+@layer components {
+  .shell {
+    @apply mx-auto w-full max-w-[1680px] px-5 sm:px-8 lg:px-16 xl:px-20;
+  }
+
+  .serif-it {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+  }
+
+  .label-xs {
+    @apply text-[10px] sm:text-[11px] font-medium uppercase tracking-[0.28em];
+  }
+
+  .btn-solid {
+    @apply btn bg-accent text-bg hover:bg-brass hover:text-bg;
+  }
+  .btn-ghost {
+    @apply btn border border-line/25 text-fg hover:border-accent hover:bg-accent/5;
+  }
+
+  .field {
+    @apply w-full border-b border-line bg-transparent py-3.5 text-base text-fg
+      placeholder:text-muted/60 focus:border-accent focus:outline-none transition-colors duration-300;
+  }
+}
+
+@utility btn {
+  @apply relative inline-flex items-center justify-center gap-2.5 rounded-full px-7 py-3.5
+    text-[11px] font-semibold uppercase tracking-[0.24em] transition-colors duration-300
+    select-none whitespace-nowrap;
+}
+
+@utility text-outline {
+  -webkit-text-stroke: 1px color-mix(in srgb, var(--color-bone) 22%, transparent);
+  color: transparent;
+}
+
+/* Lightbox seek bar */
+.lb-seek {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 18px;
+  background: transparent;
+  cursor: pointer;
+}
+.lb-seek::-webkit-slider-runnable-track {
+  height: 2px;
+  border-radius: 2px;
+  background:
+    linear-gradient(var(--color-bone), var(--color-bone)) 0 / var(--fill, 0%) 100% no-repeat,
+    color-mix(in srgb, var(--color-bone) 22%, transparent);
+}
+.lb-seek::-moz-range-track {
+  height: 2px;
+  border-radius: 2px;
+  background:
+    linear-gradient(var(--color-bone), var(--color-bone)) 0 / var(--fill, 0%) 100% no-repeat,
+    color-mix(in srgb, var(--color-bone) 22%, transparent);
+}
+.lb-seek::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: -5px;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: var(--color-bone);
+}
+.lb-seek::-moz-range-thumb {
+  height: 12px;
+  width: 12px;
+  border: none;
+  border-radius: 50%;
+  background: var(--color-bone);
+}
+
+/* Marquee strip */
+@keyframes marquee-x {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.marquee-track {
+  animation: marquee-x 36s linear infinite;
+}
+
+/* Scroll cue */
+@keyframes scroll-cue {
+  0% {
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+  45% {
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+  55% {
+    transform: scaleY(1);
+    transform-origin: bottom;
+  }
+  100% {
+    transform: scaleY(0);
+    transform-origin: bottom;
+  }
+}
+.scroll-cue-line {
+  animation: scroll-cue 2.2s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+}
+
+/* Film grain overlay */
+.grain {
+  position: fixed;
+  inset: -50%;
+  z-index: 70;
+  pointer-events: none;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Portfolio card grain overlay */
+.card-grain {
+  position: relative;
+  overflow: hidden;
+}
+.card-grain::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.35'/%3E%3C/svg%3E");
+  opacity: 0.03;
+  pointer-events: none;
+  mix-blend-mode: overlay;
+}
+
+/* Editorial baseline grid for portfolio section */
+.portfolio-grid {
+  background-image:
+    linear-gradient(90deg, color-mix(in srgb, var(--color-line) 40%, transparent) 1px, transparent 1px),
+    linear-gradient(color-mix(in srgb, var(--color-line) 40%, transparent) 1px, transparent 1px);
+  background-size: 60px 60px;
+  background-position: 0 0;
+}
+
+/* Subtle scanline texture for editor feel */
+.scanlines {
+  position: relative;
+}
+.scanlines::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    color-mix(in srgb, var(--color-line) 15%, transparent) 2px,
+    color-mix(in srgb, var(--color-line) 15%, transparent) 4px
+  );
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+/* Category gradient backgrounds */
+.bg-wedding {
+  background: linear-gradient(135deg, #1a1510 0%, #0d0a08 100%);
+}
+.bg-commercial {
+  background: linear-gradient(135deg, #0f1412 0%, #080b0a 100%);
+}
+.bg-events {
+  background: linear-gradient(135deg, #151014 0%, #0a080a 100%);
+}
+.bg-reels {
+  background: linear-gradient(135deg, #101318 0%, #08090c 100%);
+}
+.bg-showreel {
+  background: linear-gradient(135deg, #141216 0%, #0a090a 100%);
+}
