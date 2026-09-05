@@ -24,7 +24,7 @@ export function Intro() {
         </h2>
 
         <FadeIn className="col-span-12 sm:col-span-9 lg:col-span-5 lg:col-start-8" delay={0.15}>
-          <p className="text-base leading-relaxed text-[var(--color-muted)] md:text-lg">
+          <p className="text-lg leading-relaxed text-[var(--color-muted)] md:text-xl">
   We capture the moments as they happen, edit them on the spot, and give you a reel while the
   celebration is still going on. Simple, real, and made to be shared.
 </p>
