@@ -5,7 +5,7 @@ import { resolveImage, resolveVideo } from '../lib/drive'
 import { Magnetic } from './Magnetic'
 
 const EASE: [number, number, number, number] = [0.16, 1, 0.3, 1]
-const LETTERS = ['S', 'R', 'I', 'J', 'A']
+const LETTERS = ['M', 'O', 'M', 'E', 'N', 'T', 'O']
 
 interface HeroProps {
   /** Gates the entrance sequence until the preloader has finished */
