@@ -15,7 +15,7 @@ export function Showcase() {
         <h2 aria-label="FEATUREDwork" className="leading-none">
           <WordReveal
             as="span"
-            text="FEATURED "
+            text="FEATURED"
             className="inline-block font-semibold uppercase tracking-tight text-[var(--color-bone)] text-[clamp(2.8rem,7vw,6.5rem)]"
           />{' '}
           <WordReveal
