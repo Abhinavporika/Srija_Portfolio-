@@ -8,8 +8,8 @@ const env = import.meta.env
  * ────────────────────────────────────────────────────────────────
  */
 export const siteConfig = {
-  name: 'MOMENTO',
-  role: 'Video Creator & Editor',
+  name: '',
+  role: '',
   tagline: 'Moments, Made in Minutes.',
 
   hero: {
