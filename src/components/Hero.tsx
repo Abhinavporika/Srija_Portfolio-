@@ -163,7 +163,7 @@ export function Hero({ active }: HeroProps) {
 
       {/* ── Scroll cue ──────────────────────────────────────────── */}
       <motion.div
-        className="absolute bottom-6 left-1/2 z-10 flex -translate-x-1/2 flex-col items-center gap-3"
+        className="absolute bottom-6 left-1/2 z-10 hidden -translate-x-1/2 flex-col items-center gap-3 sm:flex"
         initial={reduce ? false : { opacity: 0 }}
         animate={reveal ? { opacity: 1 } : {}}
         transition={{ delay: 1.5, duration: 0.8 }}
