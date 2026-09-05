@@ -8,7 +8,7 @@ import { Magnetic } from '../components/Magnetic'
 
 export function Showcase() {
   return (
-    <section id="work" aria-label="FEATURED work" className="shell scroll-mt-24 py-28 md:py-40">
+    <section id="work" aria-label="FEATUREDwork" className="shell scroll-mt-24 py-28 md:py-40">
       <SectionLabel index="02" title="FEATURED Work" />
 
       <div className="mt-12 flex flex-wrap items-end justify-between gap-x-10 gap-y-6">
