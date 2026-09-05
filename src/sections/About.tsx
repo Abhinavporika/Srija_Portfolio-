@@ -5,10 +5,10 @@ import { siteConfig } from '../config/site'
 import { resolveImage } from '../lib/drive'
 
 const DISCIPLINES = [
-  'Videography',
-  'Editing & Story',
-  'Colour Grading',
-  'Sound Design',
+  'iPHONE CAPTURE',
+  'STORY & EDITING',
+  'CANDID MOMENTS',
+  'INSTANT REELS',
 ]
 
 export function About() {
@@ -63,15 +63,11 @@ export function About() {
             delay={0.1}
           >
             <p>
-              We Momento a video creator and editor obsessed with the space where technique
-              meets feeling. Cameras, timelines and colour wheels are just tools; the real work
-              is deciding what a moment means, and protecting that meaning all the way through
-              the cut.
+              We capture what happens naturally, without getting in the way. From the smallest details to the moments everyone remembers, MOMENTO turns real experiences into films that feel effortless.
             </p>
 
             <p>
-              No filler frames. No wasted seconds. Just honest pacing, careful sound and colour
-              that earns its place — whether the film is sixty seconds or sixty minutes.
+              Shot on iPhone, edited with intention, and delivered while the moment is still fresh.
             </p>
           </FadeIn>
 
