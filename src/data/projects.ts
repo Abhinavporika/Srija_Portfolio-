@@ -1,7 +1,5 @@
 export interface Project {
-
   /** Two-digit index used across the UI, e.g. "01" */
-
   id: string
 
   title: string
@@ -12,15 +10,12 @@ export interface Project {
     | 'Weddings'
     | 'Events'
     | 'Celebrations'
-    | 'Cafés & Restaurants'
+    | 'Cafes & Restaurants'
     | 'Instant Reels'
     | 'Commercial'
-    | 'Showcase'
-
 }
 
 export const projects: Project[] = [
-
   {
     id: '01',
     title: 'Wedding Moments',
@@ -46,7 +41,7 @@ export const projects: Project[] = [
     id: '04',
     title: 'Food & Atmosphere',
     tagline: 'Good food, good spaces, captured as they feel.',
-    category: 'Cafés & Restaurants',
+    category: 'Cafes & Restaurants',
   },
 
   {
@@ -62,12 +57,4 @@ export const projects: Project[] = [
     tagline: 'The big reveal, captured as it happened.',
     category: 'Commercial',
   },
-
-  {
-    id: '07',
-    title: 'The MOMENTO Reel',
-    tagline: 'A little look at what we do.',
-    category: 'Showcase',
-  },
-
 ]

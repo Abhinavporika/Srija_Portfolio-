@@ -8,28 +8,51 @@ interface ProjectCardProps {
 }
 
 const CATEGORY_CLASSES: Record<Project['category'], string> = {
-  Wedding: 'bg-gradient-to-br from-amber-900/20 via-orange-900/10 to-red-900/20',
-  Commercial: 'bg-gradient-to-br from-slate-900/20 via-blue-900/10 to-indigo-900/20',
-  Events: 'bg-gradient-to-br from-purple-900/20 via-pink-900/10 to-rose-900/20',
-  Reels: 'bg-gradient-to-br from-emerald-900/20 via-teal-900/10 to-cyan-900/20',
-  Showreel: 'bg-gradient-to-br from-zinc-900/20 via-neutral-900/10 to-stone-900/20',
+  Weddings:
+    'bg-gradient-to-br from-amber-900/20 via-orange-900/10 to-red-900/20',
+
+  Commercial:
+    'bg-gradient-to-br from-slate-900/20 via-blue-900/10 to-indigo-900/20',
+
+  Events:
+    'bg-gradient-to-br from-purple-900/20 via-pink-900/10 to-rose-900/20',
+
+  Celebrations:
+    'bg-gradient-to-br from-pink-900/20 via-fuchsia-900/10 to-purple-900/20',
+
+  'Cafes & Restaurants':
+    'bg-gradient-to-br from-orange-900/20 via-yellow-900/10 to-amber-900/20',
+
+  'Instant Reels':
+    'bg-gradient-to-br from-emerald-900/20 via-teal-900/10 to-cyan-900/20',
 }
 
 const CATEGORY_BADGE: Record<Project['category'], string> = {
-  Wedding: 'text-amber-400',
+  Weddings: 'text-amber-400',
+
   Commercial: 'text-blue-400',
+
   Events: 'text-pink-400',
-  Reels: 'text-teal-400',
-  Showreel: 'text-zinc-400',
+
+  Celebrations: 'text-fuchsia-400',
+
+  'Cafes & Restaurants': 'text-orange-400',
+
+  'Instant Reels': 'text-teal-400',
 }
 
 export function ProjectCard({ project }: ProjectCardProps) {
   const ref = useRef<HTMLElement>(null)
   const reduce = useReducedMotion()
+
   const categoryBg = CATEGORY_CLASSES[project.category]
   const categoryBadgeColor = CATEGORY_BADGE[project.category]
 
-  const { scrollYProgress } = useScroll({ target: ref, offset: ['start end', 'end start'] })
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ['start end', 'end start'],
+  })
+
   const y = useTransform(scrollYProgress, [0, 1], [-5, 5])
 
   return (
@@ -48,9 +71,15 @@ export function ProjectCard({ project }: ProjectCardProps) {
     >
       <div className="col-span-12 lg:col-span-10 lg:col-start-2 flex flex-col justify-center min-h-[280px] md:min-h-[340px]">
         <div className="mb-6 flex items-center justify-between">
-          <span className={cn('label-xs tabular-nums font-medium', categoryBadgeColor)}>
+          <span
+            className={cn(
+              'label-xs tabular-nums font-medium',
+              categoryBadgeColor
+            )}
+          >
             {project.category.toUpperCase()}
           </span>
+
           <span className="text-outline select-none text-7xl font-semibold leading-none lg:text-8xl text-[var(--color-line)]">
             {project.id}
           </span>
