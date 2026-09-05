@@ -10,9 +10,10 @@ export interface Project {
     | 'Weddings'
     | 'Events'
     | 'Celebrations'
-    | 'Cafes & Restaurants'
+    | 'Cafés & Restaurants'
     | 'Instant Reels'
     | 'Commercial'
+    | 'Showcase'
 }
 
 export const projects: Project[] = [
@@ -41,7 +42,7 @@ export const projects: Project[] = [
     id: '04',
     title: 'Food & Atmosphere',
     tagline: 'Good food, good spaces, captured as they feel.',
-    category: 'Cafes & Restaurants',
+    category: 'Cafés & Restaurants',
   },
 
   {
@@ -56,5 +57,12 @@ export const projects: Project[] = [
     title: 'Car Delivery',
     tagline: 'The big reveal, captured as it happened.',
     category: 'Commercial',
+  },
+
+  {
+    id: '07',
+    title: 'The MOMENTO Reel',
+    tagline: 'A little look at what we do.',
+    category: 'Showcase',
   },
 ]

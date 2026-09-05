@@ -20,11 +20,14 @@ const CATEGORY_CLASSES: Record<Project['category'], string> = {
   Celebrations:
     'bg-gradient-to-br from-pink-900/20 via-fuchsia-900/10 to-purple-900/20',
 
-  'Cafes & Restaurants':
+  'Cafés & Restaurants':
     'bg-gradient-to-br from-orange-900/20 via-yellow-900/10 to-amber-900/20',
 
   'Instant Reels':
     'bg-gradient-to-br from-emerald-900/20 via-teal-900/10 to-cyan-900/20',
+
+  Showcase:
+    'bg-gradient-to-br from-zinc-900/20 via-neutral-900/10 to-stone-900/20',
 }
 
 const CATEGORY_BADGE: Record<Project['category'], string> = {
@@ -36,9 +39,11 @@ const CATEGORY_BADGE: Record<Project['category'], string> = {
 
   Celebrations: 'text-fuchsia-400',
 
-  'Cafes & Restaurants': 'text-orange-400',
+  'Cafés & Restaurants': 'text-orange-400',
 
   'Instant Reels': 'text-teal-400',
+
+  Showcase: 'text-zinc-400',
 }
 
 export function ProjectCard({ project }: ProjectCardProps) {
