@@ -58,7 +58,7 @@ export function About() {
 
           <FadeIn className="mt-10 max-w-xl space-y-6 text-base leading-relaxed text-[var(--color-muted)] md:text-lg" delay={0.1}>
             <p>
-              I’m Momento — a video creator and editor obsessed with the space where technique
+              We Momento a video creator and editor obsessed with the space where technique
               meets feeling. Cameras, timelines and colour wheels are just tools; the real work
               is deciding what a moment means, and protecting that meaning all the way through
               the cut.

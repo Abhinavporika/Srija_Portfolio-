@@ -2,7 +2,7 @@ import { motion, useReducedMotion } from 'framer-motion'
 import { useEffect, useRef, useState } from 'react'
 import { cn } from '../lib/utils'
 
-const LETTERS = ['S', 'R', 'I', 'J', 'A']
+const LETTERS = ['M', 'O', 'M', 'E', 'N', 'T', 'O']
 const DURATION = 1250
 
 interface LoadingScreenProps {
