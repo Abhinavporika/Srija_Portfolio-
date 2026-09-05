@@ -2,12 +2,12 @@ import { Fragment } from 'react'
 import { FadeIn, WordReveal } from '../components/Reveal'
 
 const STATEMENTS = [
-  { word: 'We capture.', note: 'Using iPhone to preserve real moments as they happen.' },
-  { word: 'We edit.', note: 'Rhythm, pacing and precision — the story found in the cut.' },
-  { word: 'You share.', note: 'The finished reel delivered straight to you.' },
+  { word: 'We capture', note: 'Shot on iPhone, right as the moment happens.' },
+  { word: 'We edit', note: 'Edited on the spot, while the moment is still fresh.' },
+  { word: 'We share', note: 'Your reel, ready while the celebration is still going.' },
 ]
 
-const TERMS = ['Shoot', 'Direct', 'Edit', 'Colour', 'Sound', 'Story', 'Pacing', 'Cut']
+const TERMS = ['Shot on iPhone', 'Real', 'Raw', 'Right Now']
 
 function MarqueeStrip() {
   const row = TERMS.map((t) => `${t}   ◆   `).join('')
