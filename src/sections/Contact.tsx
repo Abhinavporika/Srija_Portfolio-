@@ -27,7 +27,7 @@ export function Contact() {
     {
       label: 'WhatsApp',
       value: 'Message on WhatsApp',
-      href: whatsappLink(siteConfig.whatsapp, 'Hi Srija — I have a project in mind.'),
+      href: whatsappLink(siteConfig.whatsapp, 'Hi Momento — I have a project in mind.'),
       external: true,
       Icon: WhatsappIcon,
     },

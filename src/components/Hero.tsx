@@ -37,7 +37,7 @@ export function Hero({ active }: HeroProps) {
     <section
       ref={ref}
       id="top"
-      aria-label="Introduction — Srija, video creator and editor"
+      aria-label="Introduction — Momento, video creator and editor"
       className="relative flex min-h-[100svh] items-end overflow-hidden"
     >
       {/* ── Media layer ─────────────────────────────────────────── */}
@@ -113,7 +113,7 @@ export function Hero({ active }: HeroProps) {
               </motion.span>
             </span>
           ))}
-          <span className="sr-only">Srija</span>
+          <span className="sr-only">Momento</span>
         </h1>
 
         <div className="mt-7 flex flex-col gap-10 md:flex-row md:items-end md:justify-between">

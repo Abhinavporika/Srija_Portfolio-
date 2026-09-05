@@ -43,7 +43,7 @@ export function LoadingScreen({ onDone }: LoadingScreenProps) {
       exit={{ y: '-100%' }}
       transition={{ duration: 0.9, ease: [0.76, 0, 0.24, 1] }}
       role="status"
-      aria-label="Loading Srija — video creator and editor"
+      aria-label="Loading Momento — video creator and editor"
     >
       <div className="flex overflow-hidden" aria-hidden="true">
         {LETTERS.map((letter, i) => (

@@ -43,7 +43,7 @@ export function Showcase() {
 
       <FadeIn delay={0.3}>
         <p className="max-w-xs pb-2 text-sm leading-relaxed text-[var(--color-muted)]">
-          A curated collection — every film shot, cut and graded by Srija.
+          A curated collection — every film shot, cut and graded by Momento.
         </p>
       </FadeIn>
 

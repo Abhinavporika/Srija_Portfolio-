@@ -28,7 +28,7 @@ export function SocialLinks({ className }: { className?: string }) {
               href={url}
               target="_blank"
               rel="noreferrer noopener"
-              aria-label={`Srija on ${label}`}
+              aria-label={`Momento on ${label}`}
               data-cursor="open"
               className="grid h-11 w-11 place-items-center rounded-full border border-[var(--color-line)] text-[var(--color-muted)] transition-colors duration-300 hover:border-[var(--color-bone)] hover:text-[var(--color-bone)]"
             >

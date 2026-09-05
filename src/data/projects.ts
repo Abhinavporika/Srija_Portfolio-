@@ -40,7 +40,7 @@ export const projects: Project[] = [
   {
     id: '06',
     title: 'The Showreel',
-    tagline: 'Everything Srija does — shoot, edit, colour, sound',
+    tagline: 'Everything Momento does — shoot, edit, colour, sound',
     category: 'Showreel',
   },
 ]

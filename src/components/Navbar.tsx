@@ -53,9 +53,9 @@ export function Navbar() {
             href="#top"
             onClick={(e) => jumpTo(e, '#top')}
             className="text-sm font-semibold uppercase tracking-[0.35em] text-[var(--color-bone)]"
-            aria-label="Srija — back to top"
+            aria-label="Momento — back to top"
           >
-            Srija
+            Momento
           </a>
 
           <nav className="hidden items-center gap-10 md:flex" aria-label="Primary">

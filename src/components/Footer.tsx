@@ -16,7 +16,7 @@ export function Footer() {
           aria-hidden="true"
           className="text-outline select-none text-center text-[clamp(4rem,15vw,14rem)] font-semibold uppercase leading-[0.85] tracking-tight"
         >
-          Srija
+          Momento
         </p>
 
         <LineReveal className="mt-12" />

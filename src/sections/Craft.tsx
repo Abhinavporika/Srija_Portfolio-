@@ -2,9 +2,9 @@ import { Fragment } from 'react'
 import { FadeIn, WordReveal } from '../components/Reveal'
 
 const STATEMENTS = [
-  { word: 'I shoot.', note: 'Direction, camera and light — captured with intent.' },
-  { word: 'I edit.', note: 'Rhythm, pacing and precision — the story found in the cut.' },
-  { word: 'I create.', note: 'Films that feel effortless — and stay with you.' },
+  { word: 'We capture.', note: 'Using iPhone to preserve real moments as they happen.' },
+  { word: 'We edit.', note: 'Rhythm, pacing and precision — the story found in the cut.' },
+  { word: 'You share.', note: 'The finished reel delivered straight to you.' },
 ]
 
 const TERMS = ['Shoot', 'Direct', 'Edit', 'Colour', 'Sound', 'Story', 'Pacing', 'Cut']
@@ -26,7 +26,7 @@ function MarqueeStrip() {
 
 export function Craft() {
   return (
-    <section aria-label="What Srija does">
+    <section aria-label="What Momento does">
       <MarqueeStrip />
 
       <div className="shell py-28 md:py-40">
@@ -59,7 +59,7 @@ export function Craft() {
 
         <FadeIn className="mx-auto mt-20 max-w-2xl text-center md:mt-28">
           <p className="text-base leading-relaxed text-[var(--color-muted)] md:text-lg">
-            From the first frame to the final grade, Srija works across every kind of visual
+            From the first frame to the final grade, Momento works across every kind of visual
             story — combining shooting, editing, colour, sound and pacing into polished films,
             whatever the format.
           </p>

@@ -15,7 +15,7 @@ export function About() {
   const portrait = resolveImage(siteConfig.profileImageUrl, 1200)
 
   return (
-    <section id="about" aria-label="About Srija" className="shell scroll-mt-24 py-28 md:py-40">
+    <section id="about" aria-label="About Momento" className="shell scroll-mt-24 py-28 md:py-40">
       <SectionLabel index="03" title="About" />
 
       <div className="mt-14 grid grid-cols-12 gap-x-6 gap-y-14 lg:gap-x-10">
@@ -26,7 +26,7 @@ export function About() {
               {portrait ? (
                 <img
                   src={portrait}
-                  alt="Portrait of Srija"
+                  alt="Portrait of Momento"
                   loading="lazy"
                   decoding="async"
                   className="h-full w-full object-cover grayscale-[18%] transition-[filter,transform] duration-[1200ms] ease-out hover:scale-[1.02] hover:grayscale-0"
@@ -58,7 +58,7 @@ export function About() {
 
           <FadeIn className="mt-10 max-w-xl space-y-6 text-base leading-relaxed text-[var(--color-muted)] md:text-lg" delay={0.1}>
             <p>
-              I’m Srija — a video creator and editor obsessed with the space where technique
+              I’m Momento — a video creator and editor obsessed with the space where technique
               meets feeling. Cameras, timelines and colour wheels are just tools; the real work
               is deciding what a moment means, and protecting that meaning all the way through
               the cut.
