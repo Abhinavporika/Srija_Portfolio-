@@ -148,13 +148,13 @@ export function Hero({ active }: HeroProps) {
           >
             <Magnetic>
               <a href="#work" className="btn-solid" data-cursor="open">
-                View My Work
+                VIEW WORK
               </a>
             </Magnetic>
 
             <Magnetic>
               <a href="#contact" className="btn-ghost" data-cursor="open">
-                Let’s Create
+                BOOK US
               </a>
             </Magnetic>
           </motion.div>

@@ -91,7 +91,7 @@ export function About() {
           </FadeIn>
 
           <FadeIn className="mt-12" delay={0.2}>
-            <p className="label-xs mb-4 text-[var(--color-muted)]">Elsewhere</p>
+            <p className="label-xs mb-4 text-[var(--color-muted)]"></p>
             <SocialLinks />
           </FadeIn>
         </div>
