@@ -46,13 +46,24 @@ export function Craft() {
                   stagger={0.05}
                   className="text-[clamp(3.2rem,9.5vw,9rem)] font-semibold uppercase leading-[0.95] tracking-tight text-[var(--color-bone)]"
                 />
+
                 <FadeIn delay={0.15}>
-                  <p className={`max-w-xs text-sm leading-relaxed text-[var(--color-muted)] ${i % 2 === 0 ? '' : 'md:order-first'}`}>
+                  <p
+                    className={`max-w-xs text-lg leading-relaxed text-[var(--color-muted)] ${
+                      i % 2 === 0 ? '' : 'md:order-first'
+                    }`}
+                  >
                     {item.note}
                   </p>
                 </FadeIn>
               </div>
-              {i < STATEMENTS.length - 1 && <div aria-hidden="true" className="h-px bg-[var(--color-line)]" />}
+
+              {i < STATEMENTS.length - 1 && (
+                <div
+                  aria-hidden="true"
+                  className="h-px bg-[var(--color-line)]"
+                />
+              )}
             </Fragment>
           ))}
         </div>
