@@ -3,8 +3,8 @@ import { FadeIn, WordReveal } from '../components/Reveal'
 
 const STATEMENTS = [
   { word: 'We capture', note: 'Shot on iPhone, right as the moment happens.' },
-  { word: 'We edit', note: 'Edited on the spot, while the moment is still fresh.' },
-  { word: 'We share', note: 'Your reel, ready while the celebration is still going.' },
+  { word: 'We edit', note: 'Edited right there, while it’s still happening.' },
+  { word: 'We deliver ', note: 'Your reel, ready while the celebration is still going.' },
 ]
 
 const TERMS = ['Shot on iPhone', 'Real', 'Raw', 'Right Now']
@@ -70,7 +70,7 @@ export function Craft() {
 
         <FadeIn className="mx-auto mt-20 max-w-2xl text-center md:mt-28">
           <p className="text-lg leading-relaxed text-[var(--color-muted)] md:text-xl">
-  We shoot on iPhone, edit the reel right there, and get it to you while the celebration is still going. So you don't have to wait days to see your moments back.
+  Shot on iPhone, edited right there, and delivered while the celebration is still going. No waiting days to relive it.
 </p>
         </FadeIn>
       </div>

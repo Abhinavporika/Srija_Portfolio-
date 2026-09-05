@@ -110,7 +110,7 @@ export function Hero({ active }: HeroProps) {
             animate={reveal ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.4, ease: EASE }}
           >
-            Video Creator &amp; Editor
+            REELS, READY INSTANTLY
           </motion.p>
         </div>
 
