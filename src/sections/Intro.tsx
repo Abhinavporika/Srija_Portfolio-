@@ -25,10 +25,9 @@ export function Intro() {
 
         <FadeIn className="col-span-12 sm:col-span-9 lg:col-span-5 lg:col-start-8" delay={0.15}>
           <p className="text-base leading-relaxed text-[var(--color-muted)] md:text-lg">
-            Every project begins with a feeling — what should this make someone feel? From the
-            first frame of footage to the final cut, Momento shapes pacing, sound and colour until
-            the story lands exactly the way it should. Nothing extra. Nothing missing.
-          </p>
+  We capture the moments as they happen, edit them on the spot, and give you a reel while the
+  celebration is still going on. Simple, real, and made to be shared.
+</p>
         </FadeIn>
       </div>
     </section>
