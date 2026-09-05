@@ -51,7 +51,7 @@ export function Contact() {
         />
         <WordReveal
           as="span"
-          text="something."
+          text="your moments"
           delay={0.25}
           className="serif-it block pl-[6vw] text-[clamp(2.8rem,9vw,8.5rem)] text-brass"
         />
@@ -59,7 +59,7 @@ export function Contact() {
 
       <FadeIn className="mt-8 max-w-xl">
         <p className="text-base leading-relaxed text-[var(--color-muted)] md:text-lg">
-          Have an idea, a project, or a story to tell? Let’s talk.
+          Have something coming up? Tell us about it. We’d love to be part of the moment.
         </p>
       </FadeIn>
 
