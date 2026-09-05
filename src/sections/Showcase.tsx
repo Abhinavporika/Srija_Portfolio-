@@ -12,7 +12,7 @@ export function Showcase() {
       <SectionLabel index="02" title="FEATURED Work" />
 
       <div className="mt-12 flex flex-wrap items-end justify-between gap-x-10 gap-y-6">
-        <h2 aria-label="FEATURED work" className="leading-none">
+        <h2 aria-label="FEATUREDwork" className="leading-none">
           <WordReveal
             as="span"
             text="FEATURED "
