@@ -54,9 +54,13 @@ export function Hero({ active }: HeroProps) {
         )}
 
         {!reduce && !posterUrl && (
-          <span className="pointer-events-none absolute inset-0 grid place-items-center font-serif text-[42vw] italic leading-none text-[var(--color-bone)]/[0.035] select-none">
-            S
-          </span>
+          <div className="pointer-events-none absolute inset-0 grid place-items-center select-none">
+            <img
+              src="/momento-logo.png"
+              alt=""
+              className="w-[42vw] max-w-none object-contain opacity-[0.035]"
+            />
+          </div>
         )}
 
         {videoUrl && mounted && (
@@ -76,11 +80,20 @@ export function Hero({ active }: HeroProps) {
       </motion.div>
 
       {/* Legibility gradients */}
-      <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-b from-[var(--color-bg)]/70 via-transparent to-[var(--color-bg)]" />
-      <div aria-hidden="true" className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-[var(--color-bg)] via-[var(--color-bg)]/30 to-transparent" />
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 bg-gradient-to-b from-[var(--color-bg)]/70 via-transparent to-[var(--color-bg)]"
+      />
+      <div
+        aria-hidden="true"
+        className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-[var(--color-bg)] via-[var(--color-bg)]/30 to-transparent"
+      />
 
       {/* ── Content ─────────────────────────────────────────────── */}
-      <motion.div style={{ y: contentY, opacity: contentOpacity }} className="shell relative z-10 pb-24 pt-36 md:pb-28">
+      <motion.div
+        style={{ y: contentY, opacity: contentOpacity }}
+        className="shell relative z-10 pb-24 pt-36 md:pb-28"
+      >
         <div className="flex items-center gap-4 overflow-hidden">
           <motion.span
             aria-hidden="true"
@@ -90,6 +103,7 @@ export function Hero({ active }: HeroProps) {
             transition={{ duration: 0.9, delay: 0.25, ease: EASE }}
             style={{ originX: 0 }}
           />
+
           <motion.p
             className="label-xs text-[var(--color-bone)/80]"
             initial={reduce ? false : { opacity: 0, y: 12 }}
@@ -137,6 +151,7 @@ export function Hero({ active }: HeroProps) {
                 View My Work
               </a>
             </Magnetic>
+
             <Magnetic>
               <a href="#contact" className="btn-ghost" data-cursor="open">
                 Let’s Create
