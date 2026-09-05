@@ -1,19 +1,22 @@
 export interface Project {
-
   /** Two-digit index used across the UI, e.g. "01" */
-
   id: string
 
   title: string
 
   tagline: string
 
-  category: 'Weddings' | 'Commercial' | 'Events' | 'Showreel'| 'Celebrations' | 'Cafes & Restaurants' | 'Instant Reels' 
-
+  category:
+    | 'Weddings'
+    | 'Commercial'
+    | 'Events'
+    | 'Showreel'
+    | 'Celebrations'
+    | 'Cafes & Restaurants'
+    | 'Instant Reels'
 }
 
 export const projects: Project[] = [
-
   {
     id: '01',
     title: 'Wedding Moments',
@@ -58,9 +61,8 @@ export const projects: Project[] = [
 
   {
     id: '07',
-    title: 'The MOMENTO Reel',
+    title: 'The MEMENTO Reel',
     tagline: 'A little look at what we do.',
-    category: 'Showreel'
-  }
-
+    category: 'Showreel',
+  },
 ]
