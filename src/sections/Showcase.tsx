@@ -8,14 +8,14 @@ import { Magnetic } from '../components/Magnetic'
 
 export function Showcase() {
   return (
-    <section id="work" aria-label="Selected work" className="shell scroll-mt-24 py-28 md:py-40">
-      <SectionLabel index="02" title="Selected Work" />
+    <section id="work" aria-label="FEATURED work" className="shell scroll-mt-24 py-28 md:py-40">
+      <SectionLabel index="02" title="FEATURED Work" />
 
       <div className="mt-12 flex flex-wrap items-end justify-between gap-x-10 gap-y-6">
-        <h2 aria-label="Selected work" className="leading-none">
+        <h2 aria-label="FEATURED work" className="leading-none">
           <WordReveal
             as="span"
-            text="SELECTED"
+            text="FEATURED "
             className="inline-block font-semibold uppercase tracking-tight text-[var(--color-bone)] text-[clamp(2.8rem,7vw,6.5rem)]"
           />{' '}
           <WordReveal
@@ -42,9 +42,9 @@ export function Showcase() {
       </div>
 
       <FadeIn delay={0.3}>
-        <p className="max-w-xs pb-2 text-sm leading-relaxed text-[var(--color-muted)]">
-          A curated collection — every film shot, cut and graded by Momento.
-        </p>
+        <p className="max-w-xs pb-2 text-base leading-relaxed text-[var(--color-muted)]">
+  A glimpse into the moments we've captured, one frame at a time.
+</p>
       </FadeIn>
 
       <div className="mt-20 grid grid-cols-12 gap-x-6 gap-y-16 lg:mt-28 lg:gap-y-20">
