@@ -69,11 +69,9 @@ export function Craft() {
         </div>
 
         <FadeIn className="mx-auto mt-20 max-w-2xl text-center md:mt-28">
-          <p className="text-base leading-relaxed text-[var(--color-muted)] md:text-lg">
-            From the first frame to the final grade, Momento works across every kind of visual
-            story — combining shooting, editing, colour, sound and pacing into polished films,
-            whatever the format.
-          </p>
+          <p className="text-lg leading-relaxed text-[var(--color-muted)] md:text-xl">
+  We shoot on iPhone, edit the reel right there, and get it to you while the celebration is still going. So you don't have to wait days to see your moments back.
+</p>
         </FadeIn>
       </div>
     </section>
