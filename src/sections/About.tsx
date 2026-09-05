@@ -63,7 +63,7 @@ export function About() {
             delay={0.1}
           >
             <p>
-              We capture what happens naturally, without getting in the way. From the smallest details to the moments everyone remembers, MOMENTO turns real experiences into films that feel effortless.
+              We capture what happens naturally, without getting in the way. From the smallest details to the moments everyone remembers, MOMENTO turns them into reels you can relive almost instantly.
             </p>
 
             <p>

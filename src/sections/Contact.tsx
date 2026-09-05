@@ -59,7 +59,7 @@ export function Contact() {
 
       <FadeIn className="mt-8 max-w-xl">
         <p className="text-base leading-relaxed text-[var(--color-muted)] md:text-lg">
-          Have something coming up? Tell us about it. We’d love to be part of the moment.
+          Have an event coming up? Tell us what you’re planning. We’ll take care of the reel.
         </p>
       </FadeIn>
 
