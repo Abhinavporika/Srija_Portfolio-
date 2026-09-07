@@ -23,11 +23,25 @@ export function Intro() {
           />
         </h2>
 
-        <FadeIn className="col-span-12 sm:col-span-9 lg:col-span-5 lg:col-start-8" delay={0.15}>
-          <p className="text-lg leading-relaxed text-[var(--color-muted)] md:text-xl">
-  We capture the moments as they happen, edit them on the spot, and give you a reel while the
-  celebration is still going on. Simple, real, and made to be shared.
-</p>
+        <FadeIn
+          className="col-span-12 sm:col-span-9 lg:col-span-5 lg:col-start-8"
+          delay={0.15}
+        >
+          <div className="space-y-5 text-lg leading-relaxed text-[var(--color-muted)] md:text-xl">
+            <p>
+              Momento is a Hyderabad-based instant reel and iPhone videography
+              service creating real-time content for weddings, events,
+              celebrations, birthdays, engagements, cafés, restaurants,
+              brands and special moments.
+            </p>
+
+            <p>
+              We shoot on iPhone, edit your reel on the spot and deliver
+              ready-to-share content the same day — so you can relive and
+              share your wedding, event or celebration while the moment is
+              still happening.
+            </p>
+          </div>
         </FadeIn>
       </div>
     </section>
